@@ -1,5 +1,5 @@
-GET http://localhost:3000 HTTP/1.1
-###
-GET http://localhost:3000/awesome HTTP/1.1
-###
-GET https://cse341-node-uoa8.onrender.com HTTP/1.1
+### Get all contacts
+GET https://api.render.com/deploy/srv-ck7s4kvq54js7393idlg?key=588e_jx3bFc HTTP/1.1
+
+### Get individual contact
+GET https://api.render.com/deploy/srv-ck7s4kvq54js7393idlg?key=588e_jx3bFc/650fbb561673b72254b95d13 HTTP/1.1
