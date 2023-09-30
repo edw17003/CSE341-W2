@@ -1,5 +1,11 @@
-### Get all contacts
-GET https://api.render.com/deploy/srv-ck7s4kvq54js7393idlg?key=588e_jx3bFc HTTP/1.1
+// Local
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/650fbb561673b72254b95d13
+###
+GET http://localhost:8080/contacts/650fbb9a1673b72254b95d15
+###
+GET http://localhost:8080/contacts/650fbbde1673b72254b95d18
 
-### Get individual contact
-GET https://api.render.com/deploy/srv-ck7s4kvq54js7393idlg?key=588e_jx3bFc/650fbb561673b72254b95d13 HTTP/1.1
+// Production
