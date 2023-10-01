@@ -7,6 +7,31 @@ GET http://localhost:8080/contacts/650fbb561673b72254b95d13
 GET http://localhost:8080/contacts/650fbb9a1673b72254b95d15
 ###
 GET http://localhost:8080/contacts/650fbbde1673b72254b95d18
+###
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Wall",
+    "lastName":"Guy",
+    "email":"idontlikehim@bad.com",
+    "favoriteColor":"Black",
+    "birthday":"05/05/1994"
+}
+###
+PUT http://localhost:8080/contacts/650fbbde1673b72254b95d18
+content-type: application/json
+
+{
+    "firstName": "Zach",
+    "lastName": "Lathen",
+    "email": "zach@test.com",
+    "favoriteColor": "Brown",
+    "birthday": "01/10/1999"
+}
+###
+DELETE http://localhost:8080/contacts/6518ca7356690432506e276d
+
 
 // Production
 ###
@@ -17,3 +42,27 @@ https://cse341-w2-264a.onrender.com/contacts/650fbb561673b72254b95d13
 https://cse341-w2-264a.onrender.com/contacts/650fbb9a1673b72254b95d15
 ###
 https://cse341-w2-264a.onrender.com/contacts/650fbbde1673b72254b95d18
+###
+POST https://cse341-w2-264a.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Wall",
+    "lastName":"Guy",
+    "email":"idontlikehim@bad.com",
+    "favoriteColor":"Black",
+    "birthday":"05/05/1994"
+}
+###
+PUT https://cse341-w2-264a.onrender.com/contacts/650fbbde1673b72254b95d18
+content-type: application/json
+
+{
+    "firstName": "Zach",
+    "lastName": "Lathen",
+    "email": "zach@test.com",
+    "favoriteColor": "Brown",
+    "birthday": "01/10/1999"
+}
+###
+DELETE https://cse341-w2-264a.onrender.com/contacts/6518ca7356690432506e276d
