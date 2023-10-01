@@ -41,7 +41,7 @@ const createContact = async (req, res, next) => {
     .collection('contacts')
     .insertOne(contact)
   response.acknowledged
-    ? res.status(201).send() 
+    ? res.status(201).send(response.insertedId)
     : res.status(500).json(response.error || 'An error occurred while creating the contact')
 };
 
